@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="radio" name="gallery" id="check1" checked>
+    <input type="radio" name="gallery" id="check2" checked>
+    <input type="radio" name="gallery" id="check3" checked>
+    <input type="radio" name="gallery" id="check4" checked>
+
+    <div class="container">
+        <h1>OUR IMAGE GALLERY</h1>
+        <div class="top-content">
+            <h3>Image Gallery</h3>
+            <label for="check1">All Images</label>
+            <label for="check2">Nature</label>
+            <label for="check3">Family</label>
+            <label for="check4">Visited Places</label>
+        </div>
+        <div class="image-gallery">
+            <div class="full-img" id="fullImgBox">
+                <img src="img/gallery15.avif" alt="" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+            </div>
+            <div class="img-gallery all-images">
+                <img src="img/gallery19.avif" alt="" onclick="openFullImg(this.src)" class="nature pic">
+                <img src="img/gallery16.avif" alt="" onclick="openFullImg(this.src)" class="places pic">
+                <img src="img/gallery3.avif" alt="" onclick="openFullImg(this.src)" class="nature pic">
+                <img src="img/gallery20.avif" alt="" onclick="openFullImg(this.src)" class="places pic">
+                <img src="img/gallery21.avif" alt="" onclick="openFullImg(this.src)" class="nature pic">
+                <img src="img/gallery22.avif" alt="" onclick="openFullImg(this.src)" class="family pic">
+                <img src="img/gallery28.avif" alt="" onclick="openFullImg(this.src)" class="family pic">
+                <img src="img/gallery25.avif" alt="" onclick="openFullImg(this.src)" class="places pic">
+                <img src="img/gallery9.avif" alt="" onclick="openFullImg(this.src)" class="family pic">
+                <img src="img/gallery10.avif" alt="" onclick="openFullImg(this.src)" class="places pic">
+                <img src="img/gallery24.avif" alt="" onclick="openFullImg(this.src)" class="nature pic">
+                <img src="img/gallery27.avif" alt="" onclick="openFullImg(this.src)" class="places pic">
+                <img src="img/gallery26.avif" alt="" onclick="openFullImg(this.src)" class="family pic">
+                <img src="img/gallery15.avif" alt="" onclick="openFullImg(this.src)" class="family pic">
+                <img src="img/gallery2.avif" alt="" onclick="openFullImg(this.src)" class="nature pic">
+            </div>
+        </div>
+    </div>
+
+
+
+
+  
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+            
+        }
+    </script>
+</body>
+</html>
