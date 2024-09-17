@@ -196,5 +196,11 @@ label:hover {
    .top-content {
     display: none;
    }
-    
+
+   h1 {
+    font-size: 25px;
+    font-weight: normal;
+    position: relative;
+    margin: 40px 0;
+}
 }
